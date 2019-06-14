@@ -35,7 +35,7 @@ At Glasgow our PsyTeachR teaching team has successfully made the transition to t
 | 13:45 - 14:00 | Welcome & Introductions| 
 | 14:00 - 14:20 | [Introduction](01_intro.html)| 
 | 14:20 - 14:50 | [Responsible Research Methods v2.0: The Next Generation](02_prehonours.html)| 
-|               | We will outline how we redeveloped our research methods teaching from the ground up to immerse students in this goal from day one. We will demonstrate our tools and approach and at the same time highlight the importance of a supportive and inclusive community in shaping and developing a large and diverse student cohort.| 
+|               | We will outline how we redeveloped our research methods teaching from the ground up to immerse students in the practice of Responsible Research Methods from day one. We will demonstrate our tools and approach and at the same time highlight the importance of a supportive and inclusive community in shaping and developing a large and diverse student cohort.| 
 | 14:50 - 15:00 | Q & A / Break| 
 | 15:00 - 15:30 | [“Psych students just can’t code”: CHALLENGE ACCEPTED](03_students.html)| 
 |                |There is an internalised belief that it is not possible to teach psychology students to code. Rebecca and Shannon challenge this belief through discussing their own personal experience of moving from SPSS to R in the middle of their undergraduate degrees, as well as their experience of supporting the next generation of psychologists to develop data skills for reproducible science.| 
