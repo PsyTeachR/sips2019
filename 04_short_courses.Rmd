@@ -1,4 +1,4 @@
 ---
 title: "Short Courses & Diverse Skill Levels"
-author: "Helena Patterson, Emily Nordmann"
+author: "Helena Paterson, Emily Nordmann"
 ---
