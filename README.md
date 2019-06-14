@@ -15,7 +15,7 @@ At Glasgow our PsyTeachR teaching team has successfully made the transition to t
 14:00 - 14:20 Introduction (Dale)  
 14:20 - 14:50 Responsible Research Methods v2.0: The Next Generation (Heather & Phil)  
 14:50 - 15:00 Q & A / Break  
-15:00 - 15:30 “Psych students just can’t code”: Challenge Accepted (Rebecca & Shannon)  
+15:00 - 15:30 “Psych students just can’t code”: CHALLENGE ACCEPTED (Rebecca & Shannon)  
 15:30 - 15:45 Short courses / diverse skill levels (Helena & Emily)  
 15:45 - 16:00 Tools for teaching (Lisa)  
 16:00 - 17:00 Breakout sessions  
