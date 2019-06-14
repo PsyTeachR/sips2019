@@ -1,0 +1,10 @@
+name: "Redesigning methods curricula for reproducibility"
+author: "psyTeachR"
+output_dir: "docs"
+output:
+  html_document:
+    self_contained: no
+    theme: flatly
+    css: style.css
+navbar:
+  title: "Redesigning methods"
