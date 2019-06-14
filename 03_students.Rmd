@@ -1,0 +1,6 @@
+---
+title: "“Psych students just can’t code”: Challenge Accepted"
+author: "Rebecca Lai, Shannon McNee"
+---
+
+There is an internalised belief that it is not possible to teach psychology students to code. Rebecca and Shannon challenge this belief through discussing their own personal experience of moving from SPSS to R in the middle of their undergraduate degrees, as well as their experience of supporting the next generation of psychologists to develop data skills for reproducible science.
