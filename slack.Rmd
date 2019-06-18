@@ -2,6 +2,8 @@
 title: "Slack"
 ---
 
+[Suggest additions to this document](https://github.com/PsyTeachR/sips2019/blob/master/slack.Rmd)
+
 [Slack](https://slack.com/) is a social messaging app that is great for team communication. You can make public or invite-only **workspaces** that consist of **channels** that can be joined by anyone on the workspace or kept private. At Glasgow we have one workspace for staff and one for staff and students.
 
 ### Create or join a workspace
