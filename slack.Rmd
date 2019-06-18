@@ -10,7 +10,12 @@ If you want to make a new workspace or join an existing workspace, go to [Slack 
 
 When you join a workspace, you'll probably be added to the *general* and *random* channels by default. Most workspaces use *general* for group-wide announcements and *random* for chat. But you can see what the channel is meant to be used for at the top of the channel.
 
-![](images/slack/channel-purpose.png)
+```{r channel-purpose, echo=FALSE, fig.cap="Channel Purpose", out.width="500px", fig.align='center'}
+
+knitr::include_graphics("images/slack/channel-purpose.png")
+
+```
+
 
 ### Joining or adding new channels
 
@@ -20,17 +25,27 @@ Click on **Channels** in the lefthand menu to browse the existing channels, or c
 
 Slack is a good way to keep organised when a team or event has a lot of different components that not everyone will want to see notifications for. For example, a course team might create a channel for each class or a conference might create a channel for each workshop. You can rename channels, but think about how to make them easily searchable if you have a lot. For example, SIPS has channels for workshops start with w_, hackathons start with h_, and unconference sessions start with u_.
 
-![](images/slack/channel-list.png)
+
+
+```{r channel-list, echo=FALSE, fig.cap="Channel List", out.width="400px", fig.align='center'}
+
+knitr::include_graphics("images/slack/channel-list.png")
+
+```
 
 ### Posts and threads
 
 Once you've joined a channel, you'll probably want to join in discussion. Different workspaces and channels have different norms, but a channel is easier to scan if you keep replies to a main topic in a **thread** underneath that message. Click on the speech bubble icon to start or add to ta thread.
 
-![](images/slack/thread.png)
+```{r thread, echo=FALSE, fig.cap="Thread", out.width="100%", fig.align='center'}
+
+knitr::include_graphics("images/slack/thread.png")
+
+```
 
 ### Code and attachments
 
-You can upload attachments to a channel. You can also post code. Mark small bits of code with backticks, like ``` `library(tidyverse)` ```. Code chuncks start and end with three backticks.
+You can upload attachments to a channel. You can also post code. Mark small bits of code with backticks, like ``` `library(tidyverse)` ```. Code chunks start and end with three backticks.
 
 <code><pre>
 &#96;&#96;&#96; 
