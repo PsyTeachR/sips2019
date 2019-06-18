@@ -49,11 +49,9 @@ knitr::include_graphics("images/slack/thread.png")
 
 You can upload attachments to a channel. You can also post code. Mark small bits of code with backticks, like ``` `library(tidyverse)` ```. Code chunks start and end with three backticks.
 
-<code><pre>
-&#96;&#96;&#96; 
+<pre>&#96;&#96;&#96; 
 iris %>%
   mutate(id = row_number()) %>%
   gather(var, val, Sepal.Length:Petal.Width) %>%
   separate(var, c("Feature", "Dimension"))
-&#96;&#96;&#96;
-</pre><code>
+&#96;&#96;&#96;</pre>
