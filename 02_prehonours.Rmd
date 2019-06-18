@@ -1,5 +1,5 @@
 ---
-title: "Responsible Research Methods v2.0: The Next Generation"
+title: "Responsible research methods v2.0: The next generation"
 author: "Heather Cleland Woods, Phil McAleer"
 ---
 
