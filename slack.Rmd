@@ -21,6 +21,14 @@ knitr::include_graphics("images/slack/channel-purpose.png")
 
 ### Joining or adding new channels
 
+<div class="floatright">
+```{r channel-list, echo=FALSE, fig.cap="Channel List", out.width="400px", fig.align='center'}
+
+knitr::include_graphics("images/slack/channel-list.png")
+
+```
+</div>
+
 Click on **Channels** in the lefthand menu to browse the existing channels, or click the plus to create a new channel (unless the workspace owner has limited channel creation to only some members). A new channel can be public or private. Either way, you can invite other people to the channel by searching for them if they are already workspace members, or inviting them if they are not. Invitations are usually easier to do in the desktop web app and don't always work in the apps.
 
 ### How to use Slack
@@ -29,11 +37,7 @@ Slack is a good way to keep organised when a team or event has a lot of differen
 
 
 
-```{r channel-list, echo=FALSE, fig.cap="Channel List", out.width="400px", fig.align='center'}
 
-knitr::include_graphics("images/slack/channel-list.png")
-
-```
 
 ### Posts and threads
 
@@ -55,3 +59,29 @@ iris %>%
   gather(var, val, Sepal.Length:Petal.Width) %>%
   separate(var, c("Feature", "Dimension"))
 &#96;&#96;&#96;</pre>
+
+
+### Your Profile
+
+Access your profile by clicking on your name in the top left corner (on the desktop app or browser) or swiping right to left on the mobile app.
+
+```{r find-profile, echo=FALSE, fig.cap="Access your profile", out.width="600px", fig.align='center'}
+
+knitr::include_graphics("images/slack/find-profile.png")
+
+```
+
+
+<div class="floatright">
+```{r edit-profile, echo=FALSE, fig.cap="Edit your profile", out.width="400px", fig.align='center'}
+
+knitr::include_graphics("images/slack/edit-profile.png")
+
+```
+</div>
+
+Edit your profile to include your full name, how you want your name displayed, a profile picture, what your role is in the team, and your time zone. 
+
+A profile picture is useful for conference workspaces where you'll be meeting new people and might want to double-check a name against a face, but it's up to you how anonymous or identifiable you want to be. 
+
+The time zone is important for teams that are located around the world, so people can see if it's working hours where you are. You can also add other info like a phone number or Skype (but most people don't).
