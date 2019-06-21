@@ -1,0 +1,74 @@
+---
+title: "SIPS Schedule"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+```{r, include = FALSE}
+library(tidyverse)
+library(lubridate)
+library(googlesheets4)
+
+sips <- googlesheets4::sheets_read("1G_SoWUquak6oD-b2L3L-XB7cF97UAGb8PPyVg3r0Lts", col_names = FALSE)
+
+read_row <- function(row) {
+  hm <- sips[[row, 1]]
+  time <- paste0("### ", hour(hm), ":", minute(hm), "\n\n")
+  
+  sessions <- sips[row, 2:25] %>%
+    unlist() %>%
+    unname()
+  
+  sessions <- sessions[!is.na(sessions)] %>%
+    paste0(collapse = "</li>\n\n<li><input type='checkbox'> ") %>%
+    paste0("<ul><li><input type='checkbox'> ", ., "</li></ul>")
+  
+  paste(time, sessions)
+}
+
+```
+
+## Sunday
+
+`r read_row(16)`
+
+`r read_row(17)`
+
+`r read_row(21)`
+
+`r read_row(22)`
+
+## Monday
+
+`r read_row(41)`
+
+`r read_row(42)`
+
+`r read_row(44)`
+
+`r read_row(46)`
+
+`r read_row(48)`
+
+`r read_row(49)`
+
+## Tuesday
+
+`r read_row(69)`
+
+`r read_row(70)`
+
+`r read_row(72)`
+
+`r read_row(74)`
+
+`r read_row(76)`
+
+`r read_row(77)`
+
+
+
+

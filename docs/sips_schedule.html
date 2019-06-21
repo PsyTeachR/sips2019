@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>SIPS Schedule</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Redesigning methods</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="/">
+    <span class="fa fa-home"></span>
+     
+    psyTeachR
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">SIPS Schedule</h1>
+
+</div>
+
+
+<div id="sunday" class="section level2">
+<h2>Sunday</h2>
+<div id="section" class="section level3">
+<h3>13:45</h3>
+<ul>
+<li>
+<input type='checkbox'> Using replication as a teaching tool in the classroom (Nicole Sorhagen &amp; Meghan Caulfield)
+</li>
+<li>
+<input type='checkbox'> Building an open science knowledge base (Felix Henninger &amp; Luisa Horsten)
+</li>
+<li>
+<input type='checkbox'> Nudging Open Science Practices in CVs (Purav “Jay” Patel &amp; Erik Anderson)
+</li>
+<li>
+<input type='checkbox'> Replace journals’ writing-based authorship guidelines with a contributorship model (Alex Holcombe, Simine Vazire, Chris Chartier)
+</li>
+<li>
+<input type='checkbox'> Poster cohort 1 on display
+</li>
+<li>
+<input type='checkbox'> Finding value in anonymized data: exploring scenarios for secondary use (Gustav Nilsonne)
+</li>
+<li>
+<input type='checkbox'> Creating a pre-registration tool for human neuroimaging studies (M/EEG, fMRI) (Johannes Algermissen, David Mehler, Stephan Heunis, Remi Gau)
+</li>
+<li>
+<input type='checkbox'> Making open psychological datasets more accessible and useful for research and teaching (Cameron Brick)
+</li>
+<li>
+<input type='checkbox'> Helping researchers identify their smallest effect size of interest (Farid Anvari, Amy Orben, Peder Isager, Felix Singleton Thorn)
+</li>
+<li>
+<input type='checkbox'> Introduction to R for psychology (Nicholas Michalak)
+</li>
+<li>
+<input type='checkbox'> Improving psychological science by formalizing psychological theories: The value of computational modeling (Donald Robinaugh &amp; Eiko Fried)
+</li>
+<li>
+<input type='checkbox'> Preparing code and data for computationally reproducible collaboration and publication: a hands-on workshop for researchers (April Clyburne-Sherin)
+</li>
+<li>
+<input type='checkbox'> Redesigning methods curricula for reproducibility (Lisa DeBruine &amp; the PsyTeachR team)
+</li>
+<li>
+<input type='checkbox'> Ethics: it’s already hard enough without it! (but why it is important!) (Sil Aarts)
+</li>
+<li>
+<input type='checkbox'> Open science for mid-career plus researchers (Clare Conry-Murray &amp; Benjamin Le)
+</li>
+<li>
+<input type='checkbox'> Ontologies for psychological science (Simon Columbus, Daniel Balliet, Giuliana Spadaro)
+</li>
+<li>
+<input type='checkbox'> Measurement error in psychology (Koen Neijenhuijs &amp; Sam Parsons)
+</li>
+<li>
+<input type='checkbox'> Encouraging data sharing and signposting in clinical psychology (Ian Hussey &amp; Olivia Kirtley)
+</li>
+</ul>
+</div>
+<div id="section-1" class="section level3">
+<h3>14:30</h3>
+<ul>
+<li>
+<input type='checkbox'> Using replication as a teaching tool in the classroom (Nicole Sorhagen &amp; Meghan Caulfield)
+</li>
+<li>
+<input type='checkbox'> Building an open science knowledge base (Felix Henninger &amp; Luisa Horsten)
+</li>
+<li>
+<input type='checkbox'> Nudging Open Science Practices in CVs (Purav “Jay” Patel &amp; Erik Anderson)
+</li>
+<li>
+<input type='checkbox'> Replace journals’ writing-based authorship guidelines with a contributorship model (Alex Holcombe, Simine Vazire, Chris Chartier)
+</li>
+<li>
+<input type='checkbox'> Poster cohort 1 on display
+</li>
+<li>
+<input type='checkbox'> Finding value in anonymized data: exploring scenarios for secondary use (Gustav Nilsonne)
+</li>
+<li>
+<input type='checkbox'> Creating a pre-registration tool for human neuroimaging studies (M/EEG, fMRI) (Johannes Algermissen, David Mehler, Stephan Heunis, Remi Gau)
+</li>
+<li>
+<input type='checkbox'> Making open psychological datasets more accessible and useful for research and teaching (Cameron Brick)
+</li>
+<li>
+<input type='checkbox'> Helping researchers identify their smallest effect size of interest (Farid Anvari, Amy Orben, Peder Isager, Felix Singleton Thorn)
+</li>
+<li>
+<input type='checkbox'> Introduction to R for psychology (Nicholas Michalak)
+</li>
+<li>
+<input type='checkbox'> Improving psychological science by formalizing psychological theories: The value of computational modeling (Donald Robinaugh &amp; Eiko Fried)
+</li>
+<li>
+<input type='checkbox'> Preparing code and data for computationally reproducible collaboration and publication: a hands-on workshop for researchers (April Clyburne-Sherin)
+</li>
+<li>
+<input type='checkbox'> Redesigning methods curricula for reproducibility (Lisa DeBruine &amp; the PsyTeachR team)
+</li>
+<li>
+<input type='checkbox'> Ethics: it’s already hard enough without it! (but why it is important!) (Sil Aarts)
+</li>
+<li>
+<input type='checkbox'> Open science for mid-career plus researchers (Clare Conry-Murray &amp; Benjamin Le)
+</li>
+<li>
+<input type='checkbox'> Ontologies for psychological science (Simon Columbus, Daniel Balliet, Giuliana Spadaro)
+</li>
+<li>
+<input type='checkbox'> Measurement error in psychology (Koen Neijenhuijs &amp; Sam Parsons)
+</li>
+<li>
+<input type='checkbox'> Encouraging data sharing and signposting in clinical psychology (Ian Hussey &amp; Olivia Kirtley)
+</li>
+<li>
+<input type='checkbox'> EDGE OF THE WORLD. TURN BACK.
+</li>
+</ul>
+</div>
+<div id="section-2" class="section level3">
+<h3>15:45</h3>
+<ul>
+<li>
+<input type='checkbox'> Using replication as a teaching tool in the classroom (Nicole Sorhagen &amp; Meghan Caulfield)
+</li>
+<li>
+<input type='checkbox'> Building an open science knowledge base (Felix Henninger &amp; Luisa Horsten)
+</li>
+<li>
+<input type='checkbox'> Less data cleaning, more data adventures with Psych-DS: What could we do if datasets lived in a common format? (Melissa Kline)
+</li>
+<li>
+<input type='checkbox'> Replace journals’ writing-based authorship guidelines with a contributorship model (Alex Holcombe, Simine Vazire, Chris Chartier)
+</li>
+<li>
+<input type='checkbox'> Poster cohort 1 on display
+</li>
+<li>
+<input type='checkbox'> Finding value in anonymized data: exploring scenarios for secondary use (Gustav Nilsonne)
+</li>
+<li>
+<input type='checkbox'> Creating a pre-registration tool for human neuroimaging studies (M/EEG, fMRI) (Johannes Algermissen, David Mehler, Stephan Heunis, Remi Gau)
+</li>
+<li>
+<input type='checkbox'> Many (validity) analysts, one dataset: Making transparent how variations in measurement practices impact conclusions about validity (Ian Hussey &amp; Sean Hughes)
+</li>
+<li>
+<input type='checkbox'> Helping researchers identify their smallest effect size of interest (Farid Anvari, Amy Orben, Peder Isager, Felix Singleton Thorn)
+</li>
+<li>
+<input type='checkbox'> Introduction to R for psychology (Nicholas Michalak)
+</li>
+<li>
+<input type='checkbox'> Contemporary Philosophy of Scientific Practices for Practicing Scientists (Fallon Mody, Martin Bush, Eden Smith)
+</li>
+<li>
+<input type='checkbox'> Preparing code and data for computationally reproducible collaboration and publication: a hands-on workshop for researchers (April Clyburne-Sherin)
+</li>
+<li>
+<input type='checkbox'> Redesigning methods curricula for reproducibility (Lisa DeBruine &amp; the PsyTeachR team)
+</li>
+<li>
+<input type='checkbox'> Twitter content analysis in R (Arnout Boot)
+</li>
+<li>
+<input type='checkbox'> Working with editors to correct the literature (Nick Brown &amp; Harris Friedman)
+</li>
+<li>
+<input type='checkbox'> Open science considerations for researchers working with qualitative data. (Crystal Steltenpohl, Alyssa Counsell, Sophia Crüwell, Amie McKibban)
+</li>
+<li>
+<input type='checkbox'> Going real-time! Utilizing continuous data deposition, sharing, analysis and reporting to facilitate openness and credibility (Zoltan Kekecs, Balazs Aczel, Marton Kovacs)
+</li>
+<li>
+<input type='checkbox'> Registered Reports &amp; PLOS ONE (Yann Benetreau)
+</li>
+</ul>
+</div>
+<div id="section-3" class="section level3">
+<h3>16:30</h3>
+<ul>
+<li>
+<input type='checkbox'> Using replication as a teaching tool in the classroom (Nicole Sorhagen &amp; Meghan Caulfield)
+</li>
+<li>
+<input type='checkbox'> Building an open science knowledge base (Felix Henninger &amp; Luisa Horsten)
+</li>
+<li>
+<input type='checkbox'> Less data cleaning, more data adventures with Psych-DS: What could we do if datasets lived in a common format? (Melissa Kline)
+</li>
+<li>
+<input type='checkbox'> Replace journals’ writing-based authorship guidelines with a contributorship model (Alex Holcombe, Simine Vazire, Chris Chartier)
+</li>
+<li>
+<input type='checkbox'> Poster cohort 1 on display
+</li>
+<li>
+<input type='checkbox'> Finding value in anonymized data: exploring scenarios for secondary use (Gustav Nilsonne)
+</li>
+<li>
+<input type='checkbox'> Creating a pre-registration tool for human neuroimaging studies (M/EEG, fMRI) (Johannes Algermissen, David Mehler, Stephan Heunis, Remi Gau)
+</li>
+<li>
+<input type='checkbox'> Many (validity) analysts, one dataset: Making transparent how variations in measurement practices impact conclusions about validity (Ian Hussey &amp; Sean Hughes)
+</li>
+<li>
+<input type='checkbox'> Helping researchers identify their smallest effect size of interest (Farid Anvari, Amy Orben, Peder Isager, Felix Singleton Thorn)
+</li>
+<li>
+<input type='checkbox'> Introduction to R for psychology (Nicholas Michalak)
+</li>
+<li>
+<input type='checkbox'> Contemporary Philosophy of Scientific Practices for Practicing Scientists (Fallon Mody, Martin Bush, Eden Smith)
+</li>
+<li>
+<input type='checkbox'> Preparing code and data for computationally reproducible collaboration and publication: a hands-on workshop for researchers (April Clyburne-Sherin)
+</li>
+<li>
+<input type='checkbox'> Redesigning methods curricula for reproducibility (Lisa DeBruine &amp; the PsyTeachR team)
+</li>
+<li>
+<input type='checkbox'> Twitter content analysis in R (Arnout Boot)
+</li>
+<li>
+<input type='checkbox'> Working with editors to correct the literature (Nick Brown &amp; Harris Friedman)
+</li>
+<li>
+<input type='checkbox'> Open science considerations for researchers working with qualitative data. (Crystal Steltenpohl, Alyssa Counsell, Sophia Crüwell, Amie McKibban)
+</li>
+<li>
+<input type='checkbox'> Going real-time! Utilizing continuous data deposition, sharing, analysis and reporting to facilitate openness and credibility (Zoltan Kekecs, Balazs Aczel, Marton Kovacs)
+</li>
+<li>
+<input type='checkbox'> Registered Reports &amp; PLOS ONE (Yann Benetreau)
+</li>
+</ul>
+</div>
+</div>
+<div id="monday" class="section level2">
+<h2>Monday</h2>
+<div id="section-4" class="section level3">
+<h3>9:30</h3>
+<ul>
+<li>
+<input type='checkbox'> QRP Reviewer Guidelines (Monica Gonzalez-Marquez &amp; Remi Gau)
+</li>
+<li>
+<input type='checkbox'> Arguments that Need to Die (John Protzko)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Poster Cohort 2 on display
+</li>
+<li>
+<input type='checkbox'> Formalizing verbal models (Kimberly Quinn &amp; Leonid Tiokhin)
+</li>
+<li>
+<input type='checkbox'> Open research documentation (Daniel Lakens &amp; Lisa DeBruine)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Introducing meta-analytic methods for psychological scientists (Sho Tsuji)
+</li>
+<li>
+<input type='checkbox'> Doing open, transparent, and reproducible research with RMarkdown and Git (Mark Andrews)
+</li>
+<li>
+<input type='checkbox'> Introduction to pre-registration (Marjan Bakker, Lorne Campbell, &amp; Olmo van der Akker)
+</li>
+<li>
+<input type='checkbox'> Meeting of the Minds: a practical introduction to current philosophy of science (Noah van Dongen, Felipe Romero, Jan Sprenger, Michal Sikorski)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Supporting teaching of open and reproducible research pratices (Sam Parsons, Flavio Azevedo, Mike Galang)
+</li>
+<li>
+<input type='checkbox'> Bayesian Inference with JASP (Eric-Jan Wagenmakers)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Creating (and Mapping) the History of Scientific Reform (Bobbie Spellman &amp; Fiona Fidler)
+</li>
+<li>
+<input type='checkbox'> When meta is not better: Towards a framework for transparent and robust systematic-reviews (Jade Pickering &amp; Oliver Clark)
+</li>
+<li>
+<input type='checkbox'> Project Free Our Knowledge: Accelerating Open Science with Collective Action Campaigns (Cooper Smout)
+</li>
+<li>
+<input type='checkbox'> ((( OPEN )))
+</li>
+</ul>
+</div>
+<div id="section-5" class="section level3">
+<h3>10:15</h3>
+<ul>
+<li>
+<input type='checkbox'> QRP Reviewer Guidelines (Monica Gonzalez-Marquez &amp; Remi Gau)
+</li>
+<li>
+<input type='checkbox'> Arguments that Need to Die (John Protzko)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Poster Cohort 2 on display
+</li>
+<li>
+<input type='checkbox'> Formalizing verbal models (Kimberly Quinn &amp; Leonid Tiokhin)
+</li>
+<li>
+<input type='checkbox'> Open research documentation (Daniel Lakens &amp; Lisa DeBruine)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Introducing meta-analytic methods for psychological scientists (Sho Tsuji)
+</li>
+<li>
+<input type='checkbox'> Doing open, transparent, and reproducible research with RMarkdown and Git (Mark Andrews)
+</li>
+<li>
+<input type='checkbox'> Introduction to pre-registration (Marjan Bakker, Lorne Campbell, &amp; Olmo van der Akker)
+</li>
+<li>
+<input type='checkbox'> Meeting of the Minds: a practical introduction to current philosophy of science (Noah van Dongen, Felipe Romero, Jan Sprenger, Michal Sikorski)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Supporting teaching of open and reproducible research pratices (Sam Parsons, Flavio Azevedo, Mike Galang)
+</li>
+<li>
+<input type='checkbox'> Bayesian Inference with JASP (Eric-Jan Wagenmakers)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Creating (and Mapping) the History of Scientific Reform (Bobbie Spellman &amp; Fiona Fidler)
+</li>
+<li>
+<input type='checkbox'> When meta is not better: Towards a framework for transparent and robust systematic-reviews (Jade Pickering &amp; Oliver Clark)
+</li>
+<li>
+<input type='checkbox'> Project Free Our Knowledge: Accelerating Open Science with Collective Action Campaigns (Cooper Smout)
+</li>
+<li>
+<input type='checkbox'> ((( OPEN )))
+</li>
+<li>
+<input type='checkbox'> EDGE OF THE WORLD. TURN BACK.
+</li>
+</ul>
+</div>
+<div id="section-6" class="section level3">
+<h3>11:30</h3>
+<ul>
+<li>
+<input type='checkbox'> SKY: Towards Science 2.0 (Sylvain Chabé-Ferret)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Poster Cohort 2 on display
+</li>
+<li>
+<input type='checkbox'> Formalizing verbal models (Kimberly Quinn &amp; Leonid Tiokhin)
+</li>
+<li>
+<input type='checkbox'> Teaching research methods, statistics, and open science to high school and undergraduate students through video games (Crystal N. Steltenpohl &amp; Katie Daniels)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Introducing meta-analytic methods for psychological scientists (Sho Tsuji)
+</li>
+<li>
+<input type='checkbox'> Doing open, transparent, and reproducible research with RMarkdown and Git (Mark Andrews)
+</li>
+<li>
+<input type='checkbox'> Introduction to pre-registration (Marjan Bakker, Lorne Campbell, &amp; Olmo van der Akker)
+</li>
+<li>
+<input type='checkbox'> Reproducible Data Visualizations Using R and Binder (Andrew Stewart &amp; Oli Clark)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Bayesian Inference with JASP (Eric-Jan Wagenmakers)
+</li>
+<li>
+<input type='checkbox'> Introducing the Platform for Young Meta-Scientists (Sarahanne Field, Anne Scheel, Noah van Dongen, Olmo van den Akker)
+</li>
+<li>
+<input type='checkbox'> How to promote open science in stagnant communities: experience from Russia (Elena Rybina &amp; Maria Servetnik)
+</li>
+<li>
+<input type='checkbox'> What do first year psychology students think about (open) science? (Jennifer Beaudry)
+</li>
+<li>
+<input type='checkbox'> Open Science in Time-Limited Student Projects (Clare Conry-Murray, Bianca Dietrich, Mariella Paul)
+</li>
+<li>
+<input type='checkbox'> ((( OPEN )))
+</li>
+</ul>
+</div>
+<div id="section-7" class="section level3">
+<h3>13:30</h3>
+<ul>
+<li>
+<input type='checkbox'> SKY: Towards Science 2.0 (Sylvain Chabé-Ferret)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Poster Cohort 2 on display
+</li>
+<li>
+<input type='checkbox'> Formalizing verbal models (Kimberly Quinn &amp; Leonid Tiokhin)
+</li>
+<li>
+<input type='checkbox'> Teaching research methods, statistics, and open science to high school and undergraduate students through video games (Crystal N. Steltenpohl &amp; Katie Daniels)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Introducing meta-analytic methods for psychological scientists (Sho Tsuji)
+</li>
+<li>
+<input type='checkbox'> Doing open, transparent, and reproducible research with RMarkdown and Git (Mark Andrews)
+</li>
+<li>
+<input type='checkbox'> Introduction to pre-registration (Marjan Bakker, Lorne Campbell, &amp; Olmo van der Akker)
+</li>
+<li>
+<input type='checkbox'> Reproducible Data Visualizations Using R and Binder (Andrew Stewart &amp; Oli Clark)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Bayesian Inference with JASP (Eric-Jan Wagenmakers)
+</li>
+<li>
+<input type='checkbox'> Introducing the Platform for Young Meta-Scientists (Sarahanne Field, Anne Scheel, Noah van Dongen, Olmo van den Akker)
+</li>
+<li>
+<input type='checkbox'> How to promote open science in stagnant communities: experience from Russia (Elena Rybina &amp; Maria Servetnik)
+</li>
+<li>
+<input type='checkbox'> What do first year psychology students think about (open) science? (Jennifer Beaudry)
+</li>
+<li>
+<input type='checkbox'> Open Science in Time-Limited Student Projects (Clare Conry-Murray, Bianca Dietrich, Mariella Paul)
+</li>
+<li>
+<input type='checkbox'> ((( OPEN )))
+</li>
+</ul>
+</div>
+<div id="section-8" class="section level3">
+<h3>14:45</h3>
+<ul>
+<li>
+<input type='checkbox'> SKY: Towards Science 2.0 (Sylvain Chabé-Ferret)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Poster Cohort 2 on display
+</li>
+<li>
+<input type='checkbox'> Challenges in ESM research: Developing a dynamic taxonomy of best practices (Eeske van Roekel, Olivia Kirtley, Ginette Lafit, Janne Adolf, Gerine Lodder)
+</li>
+<li>
+<input type='checkbox'> Meeting of the Minds: working towards sustainable interaction between science and philosophy (Noah van Dongen, Felipe Romero, Jan Sprenger, Michal Sikorski)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Finding, using and making Open Educational Resources (Rima-Maria Rahal)
+</li>
+<li>
+<input type='checkbox'> Introduction to version control using git (Tobias Heycke)
+</li>
+<li>
+<input type='checkbox'> RepliCATS: evaluating the replicability of Social and Behavioural science claims (Bonnie Wintle, Fiona Fidler, Hannah Fraser, Fallon Mody)
+</li>
+<li>
+<input type='checkbox'> Reproducible Data Visualizations Using R and Binder (Andrew Stewart &amp; Oli Clark)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Open Sampling: Challenges in using MTurk and other crowdsourced samples? (Gabriele Paolacci, Jesse Chandler, Itay Sisso)
+</li>
+<li>
+<input type='checkbox'> Introducing the Platform for Young Meta-Scientists (Sarahanne Field, Anne Scheel, Noah van Dongen, Olmo van den Akker)
+</li>
+<li>
+<input type='checkbox'> Why everyone should care about evidence-based science reading skills training, especially the Open Science movement (Monica Gonzalez-Marquez)
+</li>
+<li>
+<input type='checkbox'> The Inaugural Meeting of the Open Toolmakers’ Guild (Felix Henninger)
+</li>
+<li>
+<input type='checkbox'> Implications of Teaching Bayesian Statistics to Undergraduate Psychology Students (Henk Kiers, Rink Hoekstra, Jorge Tendeiro, Don van Ravenzwaaij)
+</li>
+<li>
+<input type='checkbox'> ((( OPEN )))
+</li>
+</ul>
+</div>
+<div id="section-9" class="section level3">
+<h3>15:30</h3>
+<ul>
+<li>
+<input type='checkbox'> SKY: Towards Science 2.0 (Sylvain Chabé-Ferret)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Poster Cohort 2 on display
+</li>
+<li>
+<input type='checkbox'> Challenges in ESM research: Developing a dynamic taxonomy of best practices (Eeske van Roekel, Olivia Kirtley, Ginette Lafit, Janne Adolf, Gerine Lodder)
+</li>
+<li>
+<input type='checkbox'> Meeting of the Minds: working towards sustainable interaction between science and philosophy (Noah van Dongen, Felipe Romero, Jan Sprenger, Michal Sikorski)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Finding, using and making Open Educational Resources (Rima-Maria Rahal)
+</li>
+<li>
+<input type='checkbox'> Introduction to version control using git (Tobias Heycke)
+</li>
+<li>
+<input type='checkbox'> RepliCATS: evaluating the replicability of Social and Behavioural science claims (Bonnie Wintle, Fiona Fidler, Hannah Fraser, Fallon Mody)
+</li>
+<li>
+<input type='checkbox'> Reproducible Data Visualizations Using R and Binder (Andrew Stewart &amp; Oli Clark)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Open Sampling: Challenges in using MTurk and other crowdsourced samples? (Gabriele Paolacci, Jesse Chandler, Itay Sisso)
+</li>
+<li>
+<input type='checkbox'> Introducing the Platform for Young Meta-Scientists (Sarahanne Field, Anne Scheel, Noah van Dongen, Olmo van den Akker)
+</li>
+<li>
+<input type='checkbox'> Why everyone should care about evidence-based science reading skills training, especially the Open Science movement (Monica Gonzalez-Marquez)
+</li>
+<li>
+<input type='checkbox'> The Inaugural Meeting of the Open Toolmakers’ Guild (Felix Henninger)
+</li>
+<li>
+<input type='checkbox'> Implications of Teaching Bayesian Statistics to Undergraduate Psychology Students (Henk Kiers, Rink Hoekstra, Jorge Tendeiro, Don van Ravenzwaaij)
+</li>
+<li>
+<input type='checkbox'> ((( OPEN )))
+</li>
+</ul>
+</div>
+</div>
+<div id="tuesday" class="section level2">
+<h2>Tuesday</h2>
+<div id="section-10" class="section level3">
+<h3>9:30</h3>
+<ul>
+<li>
+<input type='checkbox'> Reviewing for Replicability: Maximizing the Effectiveness of Manuscript Reviews and Decision Letters (Kimberly Quinn, Rich Lucas, Simine Vazire)
+</li>
+<li>
+<input type='checkbox'> Promoting the Use of Diverse Statistical Methods (Alexandra Sarafoglou, Balazs Aczel, Eric-Jan Wagenmakers)
+</li>
+<li>
+<input type='checkbox'> Tracking and Visualizing OSF adoption across time, seniority, and university (Brian Nosek)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Poster Cohort 3 on display
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Dealing with publication bias in a meta-analysis (Robbie C.M. van Aert)
+</li>
+<li>
+<input type='checkbox'> Developing your personal workflow for transparent &amp; reproducible research (Frederik Aust &amp; Johannes Breuer)
+</li>
+<li>
+<input type='checkbox'> Statistics are useless without suitable data: How to implement and assess for data quality (Erin M. Buchanan &amp; Flavio Azevedo)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Questionable Measurement Practices and How to Avoid Them (Jessica Kay Flake &amp; Eiko Fried)
+</li>
+<li>
+<input type='checkbox'> What are we doing to make open science normative in our own institutions? (Jennifer Beaudry)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Looking for an Editor and Editorial Board Members for the Journal of Open Psychology Data (Jelte Wicherts)
+</li>
+<li>
+<input type='checkbox'> ((( OPEN )))
+</li>
+</ul>
+</div>
+<div id="section-11" class="section level3">
+<h3>10:15</h3>
+<ul>
+<li>
+<input type='checkbox'> Reviewing for Replicability: Maximizing the Effectiveness of Manuscript Reviews and Decision Letters (Kimberly Quinn, Rich Lucas, Simine Vazire)
+</li>
+<li>
+<input type='checkbox'> Promoting the Use of Diverse Statistical Methods (Alexandra Sarafoglou, Balazs Aczel, Eric-Jan Wagenmakers)
+</li>
+<li>
+<input type='checkbox'> Tracking and Visualizing OSF adoption across time, seniority, and university (Brian Nosek)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Poster Cohort 3 on display
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Dealing with publication bias in a meta-analysis (Robbie C.M. van Aert)
+</li>
+<li>
+<input type='checkbox'> Developing your personal workflow for transparent &amp; reproducible research (Frederik Aust &amp; Johannes Breuer)
+</li>
+<li>
+<input type='checkbox'> Statistics are useless without suitable data: How to implement and assess for data quality (Erin M. Buchanan &amp; Flavio Azevedo)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Questionable Measurement Practices and How to Avoid Them (Jessica Kay Flake &amp; Eiko Fried)
+</li>
+<li>
+<input type='checkbox'> What are we doing to make open science normative in our own institutions? (Jennifer Beaudry)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Looking for an Editor and Editorial Board Members for the Journal of Open Psychology Data (Jelte Wicherts)
+</li>
+<li>
+<input type='checkbox'> ((( OPEN )))
+</li>
+<li>
+<input type='checkbox'> EDGE OF THE WORLD. TURN BACK.
+</li>
+</ul>
+</div>
+<div id="section-12" class="section level3">
+<h3>11:30</h3>
+<ul>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Poster Cohort 3 on display
+</li>
+<li>
+<input type='checkbox'> Developing a Lab Manual Template to facilitate more efficient, transparent, and reproducible research (Balazs Aczel, Tom Hardwicke, Marton Kovacs)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Active participation in multi-site collaborative projects to build reputation and research credibility (Sau-Chin Chen, Anna Szabelska; Jordan Wagge; Patrick S. Forscher; Balazs Aczel)
+</li>
+<li>
+<input type='checkbox'> Developing your personal workflow for transparent &amp; reproducible research (Frederik Aust &amp; Johannes Breuer)
+</li>
+<li>
+<input type='checkbox'> Statistics are useless without suitable data: How to implement and assess for data quality (Erin M. Buchanan &amp; Flavio Azevedo)
+</li>
+<li>
+<input type='checkbox'> The academic conference of the future (Olmo van den Akker)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Questionable Measurement Practices and How to Avoid Them (Jessica Kay Flake &amp; Eiko Fried)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Bringing the credibility revolution to other disciplines (Tim Parker &amp; Hannah Fraser)
+</li>
+<li>
+<input type='checkbox'> Guide Me: A Proposal to Encourage Micro-Collaboration on the Web (Purav Patel &amp; Erik Anderson)
+</li>
+<li>
+<input type='checkbox'> ((( OPEN )))
+</li>
+</ul>
+</div>
+<div id="section-13" class="section level3">
+<h3>13:30</h3>
+<ul>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Poster Cohort 3 on display
+</li>
+<li>
+<input type='checkbox'> Developing a Lab Manual Template to facilitate more efficient, transparent, and reproducible research (Balazs Aczel, Tom Hardwicke, Marton Kovacs)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Active participation in multi-site collaborative projects to build reputation and research credibility (Sau-Chin Chen, Anna Szabelska; Jordan Wagge; Patrick S. Forscher; Balazs Aczel)
+</li>
+<li>
+<input type='checkbox'> Developing your personal workflow for transparent &amp; reproducible research (Frederik Aust &amp; Johannes Breuer)
+</li>
+<li>
+<input type='checkbox'> Statistics are useless without suitable data: How to implement and assess for data quality (Erin M. Buchanan &amp; Flavio Azevedo)
+</li>
+<li>
+<input type='checkbox'> The academic conference of the future (Olmo van den Akker)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Questionable Measurement Practices and How to Avoid Them (Jessica Kay Flake &amp; Eiko Fried)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Bringing the credibility revolution to other disciplines (Tim Parker &amp; Hannah Fraser)
+</li>
+<li>
+<input type='checkbox'> Guide Me: A Proposal to Encourage Micro-Collaboration on the Web (Purav Patel &amp; Erik Anderson)
+</li>
+<li>
+<input type='checkbox'> ((( OPEN )))
+</li>
+</ul>
+</div>
+<div id="section-14" class="section level3">
+<h3>14:45</h3>
+<ul>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Poster Cohort 3 on display
+</li>
+<li>
+<input type='checkbox'> Developing a Lab Manual Template to facilitate more efficient, transparent, and reproducible research (Balazs Aczel, Tom Hardwicke, Marton Kovacs)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Document Your Data (Ruben Arslan &amp; Laura Botzet)
+</li>
+<li>
+<input type='checkbox'> One to rule them all: A beginner’s guide to fitting Bayesian mixed-effects models in Stan using brms (Johannes Algermissen &amp; Julian Quandt)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> The Future of SIPS (Tom Hardwicke, Michèle Nuijten, Randy McCarthy, Anita Eerland, Katie Corker)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Voicing values about statistical decisions (Franca Agnoli &amp; Fiona Fidler)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( OPEN )))
+</li>
+</ul>
+</div>
+<div id="section-15" class="section level3">
+<h3>15:30</h3>
+<ul>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Poster Cohort 3 on display
+</li>
+<li>
+<input type='checkbox'> Developing a Lab Manual Template to facilitate more efficient, transparent, and reproducible research (Balazs Aczel, Tom Hardwicke, Marton Kovacs)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Document Your Data (Ruben Arslan &amp; Laura Botzet)
+</li>
+<li>
+<input type='checkbox'> One to rule them all: A beginner’s guide to fitting Bayesian mixed-effects models in Stan using brms (Johannes Algermissen &amp; Julian Quandt)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> The Future of SIPS (Tom Hardwicke, Michèle Nuijten, Randy McCarthy, Anita Eerland, Katie Corker)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> Voicing values about statistical decisions (Franca Agnoli &amp; Fiona Fidler)
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( AVAILABLE )))
+</li>
+<li>
+<input type='checkbox'> ((( OPEN )))
+</li>
+</ul>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
