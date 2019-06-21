@@ -31,6 +31,10 @@ read_row <- function(row) {
 
 ```
 
+[OSF Page](https://osf.io/ndzpt/)
+
+[Live Updating Schedule](https://docs.google.com/spreadsheets/d/1G_SoWUquak6oD-b2L3L-XB7cF97UAGb8PPyVg3r0Lts/edit#gid=0)
+
 ## Sunday
 
 `r read_row(16)`
