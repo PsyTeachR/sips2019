@@ -8,70 +8,66 @@ output:
 
 
 ```{r, include = FALSE}
-library(tidyverse)
-library(lubridate)
-library(googlesheets4)
+library(dplyr)
+library(XML)
 
-sips <- googlesheets4::sheets_read("1G_SoWUquak6oD-b2L3L-XB7cF97UAGb8PPyVg3r0Lts", col_names = FALSE)
+url <- "https://docs.google.com/spreadsheets/d/1G_SoWUquak6oD-b2L3L-XB7cF97UAGb8PPyVg3r0Lts/"
+suppressWarnings({
+  doc <- paste(readLines(url), collapse=" ")
+})
+if(nchar(doc) == 0) stop("No content found")
+tables <- getNodeSet(htmlParse(doc), "//table")
+sips <- readHTMLTable(tables[[1]], header=TRUE, 
+                     stringsAsFactors=FALSE, 
+                     as.data.frame=TRUE)
 
 read_row <- function(row) {
-  hm <- sips[[row, 1]]
-  time <- paste0("### ", hour(hm), ":", minute(hm), "\n\n")
+  hm <- sips[row, 2]
   
-  sessions <- sips[row, 2:25] %>%
+  sessions <- sips[row, 3:26] %>%
     unlist() %>%
     unname()
   
-  sessions <- sessions[!is.na(sessions)] %>%
+  sessions[sessions != "" & sessions != "EDGE OF THE WORLD. TURN BACK."] %>%
     paste0(collapse = "</li>\n\n<li><input type='checkbox'> ") %>%
-    paste0("<ul><li><input type='checkbox'> ", ., "</li></ul>")
-  
-  paste(time, sessions)
+    paste0("<h3>", hm, "</h3>\n\n", 
+           "<ul><li><input type='checkbox'> ", ., "</li></ul>")
 }
 
 ```
 
+[Shiny App Version](https://t.co/tYrAV2yJ5p?amp=1) (live updates)
+
+[Live Updating Schedule](https://docs.google.com/spreadsheets/d/1G_SoWUquak6oD-b2L3L-XB7cF97UAGb8PPyVg3r0Lts/edit#gid=0) (official google doc)
+
 [OSF Page](https://osf.io/ndzpt/)
 
-[Live Updating Schedule](https://docs.google.com/spreadsheets/d/1G_SoWUquak6oD-b2L3L-XB7cF97UAGb8PPyVg3r0Lts/edit#gid=0)
+
 
 ## Sunday
 
-`r read_row(16)`
-
 `r read_row(17)`
-
-`r read_row(21)`
-
+`r read_row(18)`
 `r read_row(22)`
+`r read_row(23)`
 
 ## Monday
 
-`r read_row(41)`
-
 `r read_row(42)`
-
-`r read_row(44)`
-
-`r read_row(46)`
-
-`r read_row(48)`
-
+`r read_row(43)`
+`r read_row(45)`
+`r read_row(47)`
 `r read_row(49)`
+`r read_row(50)`
 
 ## Tuesday
 
-`r read_row(69)`
-
 `r read_row(70)`
-
-`r read_row(72)`
-
-`r read_row(74)`
-
-`r read_row(76)`
-
+`r read_row(71)`
+`r read_row(73)`
+`r read_row(75)`
 `r read_row(77)`
+`r read_row(78)`
 
 
 
