@@ -1,0 +1,56 @@
+:root {
+  --pink: #983E82;   /* hsl(315, 42%, 42%) */
+  --orange: #E2A458; /* hsl( 33, 70%, 62%) */
+  --yellow: #F5DC70; /* hsl( 49, 87%, 70%) */
+  --green: #59935B;  /* hsl(122, 25%, 46%) */
+  --blue: #467AAC;   /* hsl(209, 42%, 47%) */
+  --purple: #61589C; /* hsl(248, 28%, 48%) */
+}
+
+/* .reveal section h1 { font-size: 350%; }
+.reveal section h2 { font-size: 275%; }
+.reveal section h3 { font-size: 200%; }
+.reveal section p { font-size: 150%; } */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Market Deco' !important;
+  color: white !important;
+}
+
+.logo {
+  float: right;
+  width: 200px;
+  height: 200px;
+}
+
+.reveal {
+  color: white;
+}
+
+.reveal .state-background { 
+  background-color: #AAA;
+}
+.pink .reveal .state-background { background-color: #983E82; }
+.orange .reveal .state-background { background-color: #E2A458; }
+.yellow .reveal .state-background { background-color: #f0cb29; }
+.green .reveal .state-background { background-color: #59935B; }
+.blue .reveal .state-background { background-color: #467AAC; }
+.purple .reveal .state-background { background-color: #61589C; }
+
+.reveal .controls div.navigate-left, 
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #CCC;
+}
+
+.reveal .controls div.navigate-right, 
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #CCC;
+}
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: white;
+}
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: white;
+}
