@@ -12,6 +12,10 @@
 .reveal section h3 { font-size: 200%; }
 .reveal section p { font-size: 150%; } */
 
+.reveal input, .reveal select {
+  font-size: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Market Deco' !important;
   color: white !important;
@@ -19,12 +23,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo {
   float: right;
-  width: 200px;
-  height: 200px;
+  width: 15%;
 }
 
 .reveal {
   color: white;
+}
+
+.reveal a, .reveal a:link, .reveal a:visited, .reveal a:active {
+  color: white;
+}
+
+.reveal a:not(.image):hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .reveal .state-background { 
@@ -53,4 +65,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .reveal .controls div.navigate-right.enabled:hover {
   border-left-color: white;
+}
+
+/* webex style */
+
+/* styles for solveme */
+.solveme { border: 2px dotted var(--pink); }
+.solveme.correct { border: 2px solid var(--green); }
+/* styles for hidden solutions */
+.solution {
+    height: 2.2em;
+    overflow-y: hidden;
+    padding: 0.5em;
+}
+.solution.open {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.solution button {
+    height: 1.5em;
+    margin-bottom: 0.5em;
 }
