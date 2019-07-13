@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reveal .state-background { 
-  background-color: #AAA;
+  background-color: #666;
 }
 .pink .reveal .state-background { background-color: #983E82; }
 .orange .reveal .state-background { background-color: #E2A458; }

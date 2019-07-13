@@ -1,6 +1,0 @@
----
-title: "Responsible research methods v2.0: The next generation"
-author: "Heather Cleland Woods, Phil McAleer"
----
-
-In developing the next generation of Psychologists our goal as teachers is to ensure students leave our programs as responsible and open scientists versed and skilled in reproducible practices, regardless of their chosen career. After serious reflection we concluded a major review was required to rise to this challenge our field faces. Here we will outline how we redeveloped our research methods teaching from the ground up to immerse students in this goal from day one. We will demonstrate our tools and approach and at the same time highlight the importance of a supportive and inclusive community in shaping and developing a large and diverse student cohort.

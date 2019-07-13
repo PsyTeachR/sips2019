@@ -37,9 +37,9 @@ At Glasgow our PsyTeachR teaching team has successfully made the transition to t
 
 <div class="booklogo">
 
-[![](images/L1.png)](https://psyteachr.github.io/ug1-practical/)
+[![](images/L1.png)](https://clelandwoods.github.io/ug1-practical/)
 
-[![](images/L2.png)](https://psyteachr.github.io/ug2-practical/)
+[![](images/L2.png)](https://philmcaleer.github.io/ug2-practical/)
 
 [![](images/msc_conv.png)](https://psyteachr.github.io/msc-conv-f2f/)
 

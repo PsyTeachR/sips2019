@@ -1,6 +1,0 @@
----
-title: "Imaginary barriers to reproducibility: short courses with diverse students"
-author: "Helena Paterson, Emily Nordmann"
----
-
-What happens when you don’t have the luxury of a 4-year long degree programme in which to nurture the development of reproducible practices and coding?  Short one-year programmes or single semester courses prove to be the ultimate test of the claim that time and a diverse cohort are the enemies of teaching reproducible methods.  We will talk about our experience of postgraduate taught programmes where students range from fashion designers to chemical engineers; and where graduates of our undergraduate courses sit along-side students who have never studied psychology or learned research methods.  Such diverse cohorts bring challenges but also give an opportunity to teach responsible and reproducible practices where it can be of great benefit.
